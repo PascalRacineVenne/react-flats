@@ -1,11 +1,14 @@
-import React from 'react'
+import React from 'react';
+
+import Flat from './flat';
 
 const App = () => {
-  return(
+  return (
     <div>
       <p>Hello again!</p>
+      <Flat />
     </div>
-  )
-}
+  );
+};
 
 export default App;
