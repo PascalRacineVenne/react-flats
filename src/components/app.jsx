@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Flat from './flat';
 
@@ -13,10 +13,13 @@ const tmpFlat = {
 
 
 const App = () => {
+  const [flats, setFlats] = useState([tmpFlat]);
   return (
-    <div>
+    <div className="app">
       <div className="flat-list">
-        <Flat data={tmpFlat} />
+        {flats.map((flat) => (
+          <Flat key={flat.id} data={flat} />
+        )}
       </div>
       <div className="map-container">
 
