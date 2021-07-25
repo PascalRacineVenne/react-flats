@@ -15,8 +15,14 @@ const tmpFlat = {
 const App = () => {
   return (
     <div>
-      <Flat data={tmpFlat} />
+      <div className="flat-list">
+        <Flat data={tmpFlat} />
+      </div>
+      <div className="map-container">
+
+      </div>
     </div>
+
   );
 };
 

@@ -5,9 +5,8 @@
   background-position: center;
   color: white;
   position: relative;
-  border: 1px solid red;
   &.active {
-    border: 10px solid red;
+    border: 10px solid #BADA55;
   }
 }
 .card-user {
